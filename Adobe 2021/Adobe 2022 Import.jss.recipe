@@ -5,11 +5,11 @@
         <key>Description</key>
         <string>Import a Creative Cloud Application's pkg into a JSS.</string>
         <key>Identifier</key>
-        <string>com.github.dataJAR-recipes.jss.Import Adobe 2021 Title</string>
+        <string>com.github.dataJAR-recipes.jss.Import Adobe 2022 Title</string>
         <key>Input</key>
         <dict>
             <key>NAME</key>
-            <string>SomeAdobe2021Title</string>
+            <string>SomeAdobe2022Title</string>
             <key>MINIMUM_OS_VERSION</key>
             <string>10.14.0</string>
         	<key>SELF_SERVICE_DESCRIPTION</key>
@@ -43,7 +43,7 @@
         <array>
         	<dict>
                 <key>Processor</key>
-                <string>Adobe2021Versioner</string>
+                <string>Adobe2022Versioner</string>
             </dict>
             <dict>
                 <key>Processor</key>
