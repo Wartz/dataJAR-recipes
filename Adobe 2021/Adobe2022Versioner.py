@@ -422,6 +422,12 @@ class Adobe2022Versioner(Processor):
         elif self.env['sap_code'] == 'CHAR':
             self.env['app_version'] = load_json['CodexVersion']
             self.env['app_bundle_id'] = 'com.adobe.Character-Animator.application'
+        elif self.env['sap_code'] == 'AEFT':
+            self.env['app_version'] = load_json['CodexVersion']
+            self.env['app_bundle_id'] = 'com.adobe.AfterEffects'
+        elif self.env['sap_code'] == 'AUDT':
+            self.env['app_version'] = load_json['CodexVersion']
+            self.env['app_bundle_id'] = 'com.adobe.Audition'
         elif self.env['sap_code'] == 'DRWV':
             self.env['app_version'] = load_json['ProductVersion']
             self.env['app_bundle_id'] = 'com.adobe.dreamweaver-18.1'
@@ -444,9 +450,18 @@ class Adobe2022Versioner(Processor):
             self.env['app_version'] = load_json['CodexVersion']
             self.env['app_bundle_id'] = 'com.adobe.LightroomClassicCC7'
             self.env['vers_compare_key'] = 'CFBundleVersion'
+        elif self.env['sap_code'] == 'LRCC':
+            self.env['app_version'] = load_json['CodexVersion']
+            self.env['app_bundle_id'] = 'com.adobe.lightroomCC'
+        elif self.env['sap_code'] == 'AME':
+            self.env['app_version'] = load_json['CodexVersion']
+            self.env['app_bundle_id'] = 'com.adobe.ame.application.22'
         elif self.env['sap_code'] == 'PHSP':
             self.env['app_version'] = load_json['CodexVersion']
             self.env['app_bundle_id'] = 'com.adobe.Photoshop'
+        elif self.env['sap_code'] == 'PPRO':
+            self.env['app_version'] = load_json['CodexVersion']
+            self.env['app_bundle_id'] = 'com.adobe.PremierePro.22'
         elif self.env['sap_code'] == 'SBSTA':
             self.env['app_version'] = load_json['CodexVersion']
             self.env['app_bundle_id'] = 'com.adobe.adobe-substance-3d-sampler'
